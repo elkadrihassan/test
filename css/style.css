@@ -1,0 +1,41 @@
+:root {
+  --bg: #0e1330;
+  --panel: #1a2150;
+  --ink: #fff;
+  --accent: #fbd000;
+  --red: #e52521;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; }
+body {
+  background: radial-gradient(circle at 50% 0, #26308a 0, var(--bg) 70%) fixed;
+  color: var(--ink);
+  font-family: "Press Start 2P", ui-monospace, Menlo, Consolas, monospace;
+  display: flex; flex-direction: column; align-items: center;
+  padding: 16px;
+  -webkit-user-select: none; user-select: none;
+  touch-action: manipulation;
+}
+h1 {
+  font-size: clamp(16px, 4vw, 30px);
+  margin: 8px 0 16px; text-align: center; letter-spacing: 2px;
+  color: var(--accent);
+  text-shadow: 3px 3px 0 var(--red), 6px 6px 0 #000;
+}
+.frame {
+  width: 100%; max-width: 960px;
+  border: 6px solid #000; border-radius: 6px;
+  box-shadow: 0 0 0 4px var(--accent), 0 18px 40px rgba(0,0,0,.5);
+  background: #000; line-height: 0;
+}
+canvas { width: 100%; height: auto; display: block; image-rendering: pixelated; touch-action: none; cursor: pointer; }
+.help {
+  margin-top: 22px; max-width: 960px; width: 100%;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px;
+  font-size: 10px; line-height: 1.8;
+}
+.help div { background: var(--panel); border: 3px solid #000; padding: 12px; border-radius: 4px; }
+.help b { color: var(--accent); display: block; margin-bottom: 6px; }
+kbd { background: #fff; color: #000; padding: 2px 5px; border-radius: 3px; font-family: inherit; }
+footer { margin: 22px 0 8px; font-size: 8px; opacity: .6; text-align: center; line-height: 1.8; }
+noscript { color: var(--accent); }
