@@ -6,7 +6,8 @@ Trilingual (FR / AR with true RTL / EN).
 ```bash
 npm install
 npm run dev      # http://localhost:5173  (?lang=ar | en | fr)
-npm run build    # type-check + production build to dist/
+npm run build    # type-check + production build to dist/ (needs a web server)
+npm run build:single   # ONE self-contained dist-single/index.html — opens by double-click
 ```
 
 ## Structure

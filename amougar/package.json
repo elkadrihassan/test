@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "build:single": "tsc --noEmit && vite build --config vite.single.config.ts"
   },
   "dependencies": {
     "@fontsource/cormorant-garamond": "^5.3.0",
@@ -28,7 +29,8 @@
     "@vitejs/plugin-react": "^6.1.2",
     "tailwindcss": "^4.3.3",
     "typescript": "^7.0.2",
-    "vite": "^8.3.2"
+    "vite": "^8.3.2",
+    "vite-plugin-singlefile": "^2.3.3"
   },
   "private": true,
   "type": "module"
